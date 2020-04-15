@@ -24,11 +24,11 @@ export default function Main() {
   );
 
   function onHandlerStateChanged(event) {
-    if(event.nativeEvent.oldState === state.ACTIVE) {
+    if(event.nativeEvent.oldState === State.ACTIVE) {
+      let opened = false;
       const { translationY } = event.nativeEvent;
 
-      offset =+ translationY;
-
+      offset += translationY;
       if(translationY >= 100) {
         opened = true;
       } else {
@@ -46,6 +46,7 @@ export default function Main() {
         translateY.setOffset(offset);
         translateY.setValue(0);
       });
+      opened = true;
     }
   }
 
@@ -67,7 +68,6 @@ export default function Main() {
                 outputRange: [-50, 0, 380],
                 extrapolate: 'clamp'
               }),
-
             }]
           }
           }>

@@ -67,12 +67,6 @@ Abaixo segue o que foi utilizado na criação deste template:
 - [EditorConfig](https://editorconfig.org/) - O EditorConfig é um formatador de arquivos e coleções em forma de Plugin para Editores de código/texto com o objetivo de manter um padrão de código consistente entre diferentes editores, IDE's ou ambientes;
 
 
-## Licença
-
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
-
-<!-- CONTACT -->
-
-## Contato
-
-Rocketseat - [Github](https://github.com/rocketseat) - **oi@rocketseat.com.br**
+# Demo
+#Demo
+<a href="https://drive.google.com/open?id=1sjdr8jvd47Yh1NJNl3h59OKM7it-NulM">Demo</a>

@@ -8,28 +8,29 @@ import Tabs from '~/components/Tabs';
 import Menu from '~/components/Menu';
 
 
-export default function Main() {
-  let offset= 0;
+const Main = () => {
+  let offset = 0;
   const translateY = new Animated.Value(0);
 
   const animatedEvent = Animated.event(
     [
       {
         nativeEvent: {
-          translationY: translateY
-        }
-      }
+          translationY: translateY,
+        },
+      },
     ],
-    { useNativeDriver: true }
+    { useNativeDriver: true },
   );
 
-  function onHandlerStateChanged(event) {
-    if(event.nativeEvent.oldState === State.ACTIVE) {
+  const onHandlerStateChanged = (event) => {
+    if (event.nativeEvent.oldState === State.ACTIVE) {
       let opened = false;
       const { translationY } = event.nativeEvent;
 
       offset += translationY;
-      if(translationY >= 100) {
+
+      if (translationY >= 100) {
         opened = true;
       } else {
         translateY.setValue(offset);
@@ -46,7 +47,6 @@ export default function Main() {
         translateY.setOffset(offset);
         translateY.setValue(0);
       });
-      opened = true;
     }
   }
 
@@ -91,4 +91,6 @@ export default function Main() {
       <Tabs translateY={translateY} />
     </Container>
   )
-}
+};
+
+export default Main;

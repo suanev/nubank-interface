@@ -33,7 +33,7 @@ Este projeto visa a criação de um template que possa ser utilizado no momento 
   - [eslint-import-resolver-babel-plugin-root-import](https://github.com/olalonde/eslint-import-resolver-babel-root-import);
 - [EditorConfig](https://editorconfig.org/);
 
-##Demo
+## Demo
 <p align="center">
     <img src="https://media.giphy.com/media/PgoAlkOuuGSvmwhEm0/giphy.gif" alt="Demo">
 </p>

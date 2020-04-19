@@ -35,6 +35,5 @@ Este projeto visa a criação de um template que possa ser utilizado no momento 
 
 
 <p align="center">
-  <h3 align="center">Demo</h3>
     <img src="https://s3-sa-east-1.amazonaws.com/rocketseat-cdn/rocketseat_logo_roxa.png" alt="Logo">
 </p>
